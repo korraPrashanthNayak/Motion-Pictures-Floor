@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OTT platforms.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Plans</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>OTT platforms</b></h1>
+    <p>Data about OTT platforms</p>
+  </div>
+
+  <!-- Slideshow -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="https://i.gadgets360cdn.com/large/disney_plus_hotstar_logo_1583901149861.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://thumbs.dreamstime.com/b/amazon-prime-video-logo-amazon-prime-video-logo-white-background-vector-format-avaliable-134023997.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://wallpaperaccess.com/full/2772922.png" style="width:100%">
+  </div>
+  <div class="mySlides1">
+    <img src="https://www.adgully.com/img/800/201906/zee5.jpg" style="width:100%">
+  </div>
+  <div class="mySlides1">
+    <img src="https://vinron.in/wp-content/uploads/2021/06/Aha.png" style="width:100%">
+  </div>
+  <div class="mySlides1">
+    <img src="https://i.gadgets360cdn.com/large/voot-select-logo_1579595846623.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<!-- <p>Slideshow 2:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="img_band_chicago.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="img_band_la.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="img_band_ny.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div> -->
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+ 
+  <!-- about -->
+  <div class="w3-row-padding" id="about"></div>
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">OTT platflorms</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-20">
+      <h3>jio-cinema</h3>
+      <p>JioCinema offers a streaming smorgasbord of TV shows and movies, spanning genres such as action, family, comedy and documentaries.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-20">
+      <h3>airtel-xtreme-fiber</h3>
+      <p> It is one of the fastest broadband networks that provides fiber-optic connection for a seamless internet experience. </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-20">
+      <h3>Aha-Video</h3>
+      <p>aha is an Indian subscription video on-demand and over-the-top streaming service which offers Telugu and Tamil-language content.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-20">
+      <h3>Reliance-Entertainment</h3>
+      <p>Reliance Entertainment is the flagship motion picture arm of India's Reliance Group with a significant presence in filmed entertainment.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-dark-gray w3-container w3-padding-20">
+      <h3>ZEE5</h3>
+      <p>ZEE5 is India's fastest growing ConTech brand launched by Zee Entertainment Enterprises Limited (ZEEL), a global Media and Entertainment powerhouse.</p>
+    </div>
+    <img src="https://cutewallpaper.org/24/google-play-png/spotify-google-play-icon-google-play-store-icon-white-png-image--transparent-png-free-download-on-seekpng.png" alt="flower"class="w3-col l3 m6 w3-light-gray w3-container w3-padding-20"style="width:350px;height:165px;">
+    <img src="http://atlas-content-cdn.pixelsquid.com/stock-images/icon-play-logo-8dEJlYE-600.jpg" alt="flower"class="w3-col l3 m6 w3-light-gray w3-container w3-padding-20"style="width:350px;height:165px;">
+    <img src="https://cutewallpaper.org/24/google-play-png/spotify-google-play-icon-google-play-store-icon-white-png-image--transparent-png-free-download-on-seekpng.png" alt="flower"class="w3-col l3 m6 w3-light-gray w3-container w3-padding-20"style="width:350px;height:165px;">
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h3>Pricing Plans</h3>
+      <p>Choose a pricing plan that fits your needs.</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow ">
+        <li class="w3-black w3-xlarge w3-padding-32">jio-cinema</li>
+        <li class="w3-padding-16"><b>1</b> month</li>
+        <li class="w3-padding-16"><b>data</b> 1.5GB Daily</li>
+        <li class="w3-padding-16"><b>jio subscription</b> 1 Year</li>
+        <li class="w3-padding-16"><b>Data</b> 1.5GB Daily</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₹ 1699</h2>
+          <span class="w3-opacity">per Year</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://www.primevideo.com/storefront/home/ref=atv_br_Telugu_c_9zZ8D2_1_1" >
+            <button class ="w3-button w3-green w3-padding-large">BUY NOW</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">airtel-xtreme-fiber</li>
+        <li class="w3-padding-16"><b>Speed</b>40 Mbps,200 Mbps</li>
+        <li class="w3-padding-16"><b>Data</b> Unlimited,unlimited</li>
+        <li class="w3-padding-16"><b>OTT platforms</b>Disney+Hotstar,Disney+Hotstar & Amazon Prime</li>
+        <li class="w3-padding-16"><b>TV channels</b> 350,350</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₹699,₹1099</h2>
+          <span class="w3-opacity">per month , per Year</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://www.primevideo.com/storefront/home/ref=atv_br_Telugu_c_9zZ8D2_1_1" >
+            <button class ="w3-button w3-green w3-padding-large">BUY NOW</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Aha-Video</li>
+        <li class="w3-padding-16"><b>Aha offer</b> 3 months subscriptionat ₹149</li>
+        <li class="w3-padding-16"><b>Aha offer</b> Yearly subscription at ₹365</li>
+        <li class="w3-padding-16"><b>Quarterly Plan</b> ₹199/3months</li>
+        <li class="w3-padding-16"><b>Annual Plan</b> ₹399/year</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">₹149,₹365</h2>
+          <span class="w3-opacity">per 3 month , per 1 Year</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://www.primevideo.com/storefront/home/ref=atv_br_Telugu_c_9zZ8D2_1_1" >
+            <button class ="w3-button w3-green w3-padding-large">BUY NOW</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+      <li class="w3-black w3-xlarge w3-padding-32">Reliance-Entertainment</li>
+      <li class="w3-padding-16"><b>₹100/month</b> for 6 Apps</li>
+      <li class="w3-padding-16"><b>₹200/month for 14 Apps</b> Emails</li>
+      <li class="w3-padding-16"><b>₹999/month</b> with Amazon Prime</li>
+      <li class="w3-padding-16"><b>₹1499/month</b> with Amazon Prime + Netflix Basic </li>
+      <li class="w3-padding-16">
+        <h2 class="w3-wide">₹100,₹200</h2>
+        <span class="w3-opacity">per month(for 6 Apps,14 Apps)</span>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <a href="https://www.primevideo.com/storefront/home/ref=atv_br_Telugu_c_9zZ8D2_1_1" >
+        <button class ="w3-button w3-green w3-padding-large">BUY NOW</button></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-dark-grey w3-xlarge w3-padding-32">ZEE5</li>
+    <li class="w3-padding-16"><b>INR 99</b> for 1 month</li>
+    <li class="w3-padding-16"><b>INR 365</b> for 1 year</li>
+    <li class="w3-padding-16"><b>INR 299</b> for 3 months</li>
+    <li class="w3-padding-16"><b>INR 599</b> for 6 months</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">₹99 , ₹365</h2>
+      <span class="w3-opacity">per month , per year</span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+      <!-- <button class="w3-button w3-green w3-padding-large">BUY NOW</button> -->
+      <a href="https://www.primevideo.com/storefront/home/ref=atv_br_Telugu_c_9zZ8D2_1_1" >
+        <button class ="w3-button w3-green w3-padding-large">BUY NOW</button></a>
+      
+    </li>
+  </ul>
+</div>
+
+
+ <!-- Details of us -->
+ <div class="w3-row-padding w3-padding-28" id="contact">
+  <!-- <div class="w3-container w3-padding-32" id="contact"> -->
+  <div class="w3-center w3-padding-64">
+   <!-- <div class="w3-container w3-padding-32" id="contact"></div> -->
+    <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">Who We Are</span>
+    
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="IMG_20220112_012258_500.jpg" alt="korra prashanth nayak" style="width:100%">
+      <div class="w3-container">
+        <h3>Korra Prashanth Nayak</h3>
+        <p class="w3-opacity">From CSE(AIML)</p>
+        <p>21881A66G0.</p>
+        <p>Mb No.6302041639</p>
+        <p><button class="w3-button w3-light-gray w3-block">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="WhatsApp Image 2022-08-22 at 6.52.16 PM.jpeg" alt="Nikhil Reddy" style="width:100%">
+      <div class="w3-container">
+        <h3>Nikhil Reddy</h3>
+        <p class="w3-opacity">From CSE(AIML)</p>
+        <p>21881A66D1.</p>
+        <p>Mb No.9542021907</p>
+        <p><button class="w3-button w3-light-gray w3-block">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+      <img src="WhatsApp Image 2022-08-21 at 11.33.01 PM.jpeg" alt="Akansha" style="width:100%">
+      <div class="w3-container">
+        <h3>Akansha</h3>
+        <p class="w3-opacity">From CSE</p>
+        <p>21881A0567.</p>
+        <p>Mb No.8125967168</p>
+        <p><button class="w3-button w3-light-gray w3-block">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+    
+    
+    </script>
+    <!-- Contact Section -->
+  <!-- <div class="w3-container w3-padding-32" id="contact"> -->
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center w3-hover-shadow">Contact Us.</h3>
+    <p>Lets get in touch for Help.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+</div>
+  <!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>✉︎</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a title="OTT platforms." target="_blank" class="w3-hover-text-green">OTT platforms.</a></p>
+</footer>
+<script>
+  
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
